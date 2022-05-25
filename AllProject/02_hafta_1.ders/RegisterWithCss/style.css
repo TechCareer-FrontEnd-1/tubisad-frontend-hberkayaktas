@@ -1,0 +1,157 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.register-panel {
+      position: absolute;
+      width: 80%;
+      max-width: 400px;
+      min-height: 500px;
+      top: 10%;
+      background: #f9fafd;
+      padding: 10px 20px;
+      border: 3px solid #c2c2c448;
+      border-radius: 5px;
+      text-align: center;
+      font-family: system-ui, sans-serif, Verdana, Geneva, Tahoma;
+}
+
+.register-panel>h2 {
+      font-size: 20pt;
+}
+
+.registerholder {
+      width: 100%;
+      position: relative;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+}
+
+.registerholder span {
+      background: #e6e6e9;
+      color: #44494d;
+      padding: 5px 10px;
+      border: 1px solid #c2c2c4dc;
+      left: 0px;
+      position: absolute;
+      width: 20%;
+      height: 100%;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+}
+
+.registerholder input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+input {
+      padding: 5px;
+      width: 80%;
+      position: absolute;
+      right: 0;
+      height: 100%;
+      border: 1px solid #c2c2c4dc;
+      border-left: none;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+}
+
+.registerholder input[type="number"] {
+      width: 30%;
+      position: absolute;
+      right: 50%;
+      border-radius: 0px;
+}
+
+.registerholder input[type="tel"] {
+      width: 50%;
+      right: 0px;
+      position: absolute;
+}
+
+.apiButton {
+      display: block;
+      margin: 5px 0;
+      padding: 5px;
+      border-radius: 5px;
+}
+
+.social>p {
+      margin-top: 5px;
+}
+
+.social>a {
+      color: #fff;
+      text-decoration: none;
+}
+.or{
+      position: relative;
+      top: -11px;
+      background-color:#f9fafd;
+      z-index: 1;
+      padding: 6px;
+}
+.cizgi {
+      position: absolute;
+      width: 90%;
+      left: 5%;
+      border-bottom: 1px solid #c2c2c4dc;
+
+}
+
+.facebook {
+      background: #415d9b;
+}
+
+.facebook:hover {
+      background: #5276c5;
+}
+.twitter{
+      background: #40afee;
+}
+.twitter:hover {
+      background: #64c6ff;
+}
+
+.btn {
+      padding: 10px 15px;
+      border-radius: 10px;
+      font-size: 11pt;
+      font-family: Arial;
+      cursor: pointer;
+      
+      width: 30%;
+}
+
+.submit {
+      color: #fff;
+      background-color: #5d975b;
+      border: 0px solid #358332;
+}
+
+.submit:hover {
+      background-color: #58ce52;
+}
+
+.reset {
+      color: #fff;
+      background-color: #c95760;
+      border: 0px solid #836666;
+}
+
+.reset:hover {
+      background-color: #ca3c48;
+}

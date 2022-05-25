@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Todo</title>
+      <link rel="stylesheet" href="style.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+            integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+      <div class="container">
+            <div class="background"></div>
+            <div class="new-todo">
+                  <h3>Todo App:</h3>
+                  <form action="" method="POST">
+                        <td colspan="2"><input type="text" placeholder="New Todo..." /></td>
+                        <td><button class="btn solid">Add</button></td>
+                  </form>
+            </div>
+            <div class="main">
+                  <div class="edit-todo">
+                        <form>
+                              <h3>Edit:</h3>
+                              <input class="edit-text" type="text" placeholder="Mow the Lawn" /><button
+                                    class="btn outline" type="submit">Save</button>
+                        </form>
+                  </div>
+                  <div class="todo-list">
+                        <ul>
+                              <li>
+                                    <span class="todo-holder">
+                                          <input type="checkbox" name="todo1" checked />
+                                          <label for="todo1">Ctml Öğrenilecek</label></span>
+                                    <span><button class="just-icon">
+                                                <i class="fa-solid fa-pen"></i></button><button class="just-icon">
+                                                <i class="fa-solid fa-trash-can"></i></button></span>
+                              </li>
+                              <li>
+                                    <span class="todo-holder"><input type="checkbox" name="todo2" /><label
+                                                for="todo2">Css Öğrenilecek</label></span><span><button
+                                                class="just-icon">
+                                                <i class="fa-solid fa-pen"></i></button><button class="just-icon">
+                                                <i class="fa-solid fa-trash-can"></i></button></span>
+                              </li>
+                              <li>
+                                    <span class="todo-holder"><input type="checkbox" name="todo3" /><label
+                                                for="todo3">React Öğrenilecek</label></span><span><button
+                                                class="just-icon">
+                                                <i class="fa-solid fa-pen"></i></button><button class="just-icon">
+                                                <i class="fa-solid fa-trash-can"></i></button></span>
+                              </li>
+                        </ul>
+                  </div>
+            </div>
+
+      </div>
+      <footer class="footer">
+            <p>2022 By Berkay Aktaş</p>
+      </footer>
+</body>
+
+</html>
