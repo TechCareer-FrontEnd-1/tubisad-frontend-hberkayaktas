@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <script>
+            //kullanıcı tarafından sayı girelim (prompt)
+            //1<=X<=sayı
+            //eğer sayı 44 secretKey ise toplama yapmadan çıksın (break)
+            //eğer sayı 1 veya negatifse kullanıcıyı uyararsın (break) 1 veya-1 küçük giremezsiniz sonrasında tekrardan kullanıcıdan sayı istesin (sonsuz)
+            //eğer toplanacak sayılarda 7 varsa toplamaya dahil edilmesin (continue)
+            //Bu sayıların toplamını yapan program yapalım
+            var gelen = prompt("lütfen bir sayı girin");
+            while (true) {
+                  if (gelen == 1 || gelen < 0) {
+                        window.alert("lütfen 1 den büyük ve pozitif sayı giriniz");
+                        gelen = prompt("lütfen bir sayı girin");
+                        continue;
+                  }
+                  
+                  else {
+                        
+                        var sum = 0;
+                        var sayi = 1;
+                        for (let a = 0; a < gelen; a++) {
+                              if (gelen == 44) {
+                                    window.alert("secret key");
+                                    break;
+                              }
+                              if(sayi == 7 ){
+                                    sayi++;
+                                    //console.log(sum);
+                                   continue;
+                              }else{
+                                   sum += sayi; 
+                                   sayi++;
+                              } 
+                              //console.log(sum + " " + a + " "+sayi);
+                        }
+                        document.write("Sayıların Toplamı:"+sum);
+                        break;
+                  }
+            }
+
+
+      </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
