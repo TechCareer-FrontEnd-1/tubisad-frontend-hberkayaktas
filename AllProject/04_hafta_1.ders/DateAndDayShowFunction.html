@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <script>
+            let getDater = (taken) => {
+                  let date = new Date(taken);
+                  let day_index = date.getDay();
+
+                  switch (day_index) {
+                        case 0:
+                              document.write('Pazar')
+                              break
+                        case 1:
+                              document.write('Pazartesi')
+                              break
+                        case 2:
+                              document.write('salı')
+                              break
+                        case 3:
+                              document.write('çarşamba')
+                              break
+                        case 4:
+                              document.write('Perşembe')
+                              break
+                        case 5:
+                              document.write('Cuma')
+                              break
+                        case 6:
+                              document.write('Cumartesi')
+                              break
+                        default:
+                              document.write('aralık dışı')
+                              break
+                  }
+            }
+            let al_date = prompt("lütfen tarih giriniz");
+            getDater(al_date);            
+      </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
