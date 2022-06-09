@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <script>
+            let taken = prompt('Adığınız string');
+            //let taken = "hami Berkay Aktaş";
+            function masker(maskTo){
+                  let hold = maskTo.toString();
+                  let array = hold.split(" ");
+                  let son_hali = "";
+                  //console.log(array);
+                  array.map((item) =>{
+                        let subHold = item.substring(1,item.length-1);
+                        //console.log(item);
+                        //console.log(subHold);
+                        let changed = subHold.replace(/\w/g,"*");
+                        //console.log(changed);
+                        let total = item.slice(0,1)+ changed+ item.slice(item.length-1)
+                        //console.log(total);
+                        son_hali = son_hali + total +" ";
+                  })
+
+                 
+                  return son_hali;
+            }
+           document.write(masker(taken));
+      </script>
+</head>
+<body>
+      
+</body>
+</html>
