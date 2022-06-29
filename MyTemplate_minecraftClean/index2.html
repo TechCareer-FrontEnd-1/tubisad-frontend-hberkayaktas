@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./slider.js"></script>
+  </head>
+
+  <body>
+    <div class="container bg-pattern">
+      <div class="bg-left"></div>
+      <div class="row mt-2">
+        <div class="col-md-4">
+          <span class="logo">
+            <i class="fa-solid fa-gamepad"></i>
+          </span>
+          <span class="h5 text-muted logo-text"> Minecraft Battleground </span>
+        </div>
+        <div class="col-md-8 align-self-center">
+          <div class="row align-items-center">
+            <div class="col-6 p-0">
+              <ul class="TP-menu pt-2">
+                <a href="#">
+                  <li class="menu-active">Anasayfa</li>
+                </a>
+                <a href="#">
+                  <li>Proje</li>
+                </a>
+                <a href="#">
+                  <li class="donate">Bağış</li>
+                </a>
+                <a href="#">
+                  <li>Hakkımızda</li>
+                </a>
+                <div class="dropCover">
+                  <li>
+                    <span><i class="fa-solid fa-ellipsis"></i></span>
+                    <div class="drop-content">
+                      <a href="">Detay</a>
+                      <a href="">Detay</a>
+                      <a href="">Detay</a>
+                      <a href="">Detay</a>
+                    </div>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="col p-0">
+              <div class="glassBtn shadow">
+                <a href=""
+                  ><span class="btn-icon"
+                    ><i class="fa-solid fa-user-large"></i></span
+                  ><span class="btn-text">Kayıt ol</span></a
+                >
+              </div>
+              <div class="glassBtn shadow">
+                <a href="" class="blueSheme"
+                  ><span class="btn-icon"><i class="fa-solid fa-play"></i></span
+                  ><span class="btn-text">Oynamaya Başla</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center mt-4">
+        <div class="col-md-8">
+          <div class="row sliderSlide">
+            <div class="row allSlideHolder m-0 p-0" id="sliderCatcher">
+              <div class="row" style="margin-right: 7px">
+                <div class="col-md-7 p-0">
+                  <div class="slideholder">
+                    <span class="slider-state1"></span>
+                  </div>
+                </div>
+                <div class="col-md p-0 pt-5">
+                  <p class="menu-active fs-1 fw-bold w-25">Minecraft</p>
+                  <p class="text-muted">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Impedit veniam explicabo quod maxime dolore repellat?
+                  </p>
+                  <div class="glassBtn shadow">
+                    <a href=""
+                      ><span class="btn-icon"
+                        ><i class="fa-solid fa-user-large"></i></span
+                      ><span class="btn-text">Kayıt ol</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-7 p-0">
+                  <div class="slideholder">
+                    <span class="slider-state1"></span>
+                  </div>
+                </div>
+                <div class="col-md p-0 pt-5">
+                  <p class="menu-active fs-1 fw-bold w-25">Minecraft</p>
+                  <p class="text-muted">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Impedit veniam explicabo quod maxime dolore repellat?
+                  </p>
+                  <div class="glassBtn shadow">
+                    <a href=""
+                      ><span class="btn-icon"
+                        ><i class="fa-solid fa-user-large"></i></span
+                      ><span class="btn-text">Kayıt ol</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-7 p-0">
+                  <div class="slideholder">
+                    <span class="slider-state1"></span>
+                  </div>
+                </div>
+                <div class="col-md p-0 pt-5">
+                  <p class="menu-active fs-1 fw-bold w-25">Minecraft</p>
+                  <p class="text-muted">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Impedit veniam explicabo quod maxime dolore repellat?
+                  </p>
+                  <div class="glassBtn shadow">
+                    <a href=""
+                      ><span class="btn-icon"
+                        ><i class="fa-solid fa-user-large"></i></span
+                      ><span class="btn-text">Kayıt ol</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <span
+              class="logo blueSheme sliderDot sliderDot-a"
+              onclick="degistir(1)"
+              id="dot1"
+            ></span>
+            <span
+              class="logo blueSheme sliderDot"
+              onclick="degistir(2)"
+              id="dot2"
+            ></span>
+            <span
+              class="logo blueSheme sliderDot"
+              onclick="degistir(3)"
+              id="dot3"
+            ></span>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="header-btn">
+            <div class="row p-0">
+              <div
+                class="col-md-4 d-flex justify-content-center align-items-center"
+              >
+                <span><i class="fa-solid fa-circle-question"></i></span>
+              </div>
+              <div class="col ps-0 pt-2">
+                <p class="h6 text-secondary">Kafana Takılanlar</p>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="header-btn">
+            <div class="row">
+              <div
+                class="col-md-4 d-flex justify-content-center align-items-center"
+              >
+                <span><i class="fa-solid fa-circle-user"></i></span>
+              </div>
+              <div class="col ps-0 pt-2">
+                <p class="h6 text-secondary">Kafana Takılanlar</p>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-2 mb-2">
+        <div class="col-md-8">
+          <div class="tmp-card row mb-5">
+            <div class="col-md-4">
+              <img src="./img/post.png" alt="" srcset="" />
+            </div>
+            <div class="col-md-8 pt-4">
+              <p class="h4">Lorem ipsum dolor sit amet</p>
+              <p class="text-muted">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+                esse itaque velit nesciunt molestias at quae mollitia ea
+                repudiandae pariatur optio porro unde, rem doloribus iste
+                tempore inventore voluptas possimus?
+              </p>
+              <span class="card-status">YENİ</span>
+              <a href="#" class="card-button">18.05.18 12:42</a>
+              <div class="glassBtn shadow fix">
+                <a href="" class="blueSheme card-glass ">
+                  <span class="btn-icon ps-2"><i class="fa-solid fa-eye"></i>
+                    </span><span class="btn-text">Daha fazla</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="tmp-card row mb-5">
+            <div class="col-md-4">
+              <img src="./img/post.png" alt="" srcset="" />
+            </div>
+            <div class="col-md-8 pt-4">
+              <p class="h4">Lorem ipsum dolor sit amet</p>
+              <p class="text-muted">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+                esse itaque velit nesciunt molestias at quae mollitia ea
+                repudiandae pariatur optio porro unde, rem doloribus iste
+                tempore inventore voluptas possimus?
+              </p>
+              <span class="card-status">YENİ</span>
+              <a href="#" class="card-button">18.05.18 12:42</a>
+              <div class="glassBtn shadow fix">
+                <a href="" class="blueSheme card-glass"
+                  ><span class="btn-icon  ps-2"><i class="fa-solid fa-eye"></i></span
+                  ><span class="btn-text">Daha fazla</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="tmp-card row mb-5">
+            <div class="col-md-4">
+              <img src="./img/post.png" alt="" srcset="" />
+            </div>
+            <div class="col-md-8 pt-4">
+              <p class="h4">Lorem ipsum dolor sit amet</p>
+              <p class="text-muted">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+                esse itaque velit nesciunt molestias at quae mollitia ea
+                repudiandae pariatur optio porro unde, rem doloribus iste
+                tempore inventore voluptas possimus?
+              </p>
+              <span class="card-status">YENİ</span>
+              <a href="#" class="card-button">18.05.18 12:42</a>
+              <div class="glassBtn shadow fix">
+                <a href="" class="blueSheme card-glass"
+                  ><span class="btn-icon  ps-2"><i class="fa-solid fa-eye"></i></span
+                  ><span class="btn-text">Daha fazla</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="tmp-card row mb-5">
+            <div class="col-md-4">
+              <img src="./img/post.png" alt="" srcset="" />
+            </div>
+            <div class="col-md-8 pt-4">
+              <p class="h4">Lorem ipsum dolor sit amet</p>
+              <p class="text-muted">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+                esse itaque velit nesciunt molestias at quae mollitia ea
+                repudiandae pariatur optio porro unde, rem doloribus iste
+                tempore inventore voluptas possimus?
+              </p>
+              <span class="card-status">YENİ</span>
+              <a href="#" class="card-button">18.05.18 12:42</a>
+              <div class="glassBtn shadow fix">
+                <a href="" class="blueSheme card-glass"
+                  ><span class="btn-icon  ps-2"><i class="fa-solid fa-eye"></i></span
+                  ><span class="btn-text">Daha fazla</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="tmp-card row">
+            <div class="col-md-4">
+              <img src="./img/post.png" alt="" srcset="" />
+            </div>
+            <div class="col-md-8 pt-4">
+              <p class="h4">Lorem ipsum dolor sit amet</p>
+              <p class="text-muted">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+                esse itaque velit nesciunt molestias at quae mollitia ea
+                repudiandae pariatur optio porro unde, rem doloribus iste
+                tempore inventore voluptas possimus?
+              </p>
+              <span class="card-status">YENİ</span>
+              <a href="#" class="card-button">18.05.18 12:42</a>
+              <div class="glassBtn shadow fix">
+                <a href="" class="blueSheme card-glass"
+                  ><span class="btn-icon  ps-2"><i class="fa-solid fa-eye"></i></span
+                  ><span class="btn-text">Daha fazla</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="tmp-card pt-2">
+            <p class="text-center h6">Server Status</p>
+            <div class="row justify-content-center px-4">
+              <hr class="text-muted" />
+              <div class="row p-0 pb-2">
+                <div class="col-md-4 position-relative">
+                    <div class="radial_progress" id="radialprogress" style="height: 75px; width: 75px">
+                    <div class="radial_inner" id="radialinner"></div>
+                    </div>
+                    <script>
+                        let value = 58;
+                        const angle = value * 3.6;
+                        document.getElementById('radialprogress').style.background = `conic-gradient(#42a4f3 0deg,  #5260d5 ${angle}deg, #ebecf0 ${angle + 5}deg, #ebecf0 360deg)`
+                        document.querySelector('#radialinner').innerHTML = value + '%'
+                    </script>
+                    
+                </div>
+                <div class="col-md-8 p-0">
+                  <p class="text-muted p-0 m-0">Sunucu Durumu</p>
+                  <p class="text-muted p-0 m-0">58/100</p>
+                </div>
+              </div>
+              <div class="row p-0 pb-2">
+                <div class="col-md-4">
+                  <div class="radial_progress" style="height: 75px; width: 75px ;
+                      background: conic-gradient(rgb(66, 164, 243) 0deg, rgb(82, 96, 213) 208.8deg, rgb(235, 236, 240) 213.8deg, rgb(235, 236, 240) 360deg);">
+                    <div class="radial_inner"> 58%</div>
+                  </div>
+                </div>
+                <div class="col-md-8 p-0">
+                  <p class="text-muted p-0 m-0">Sunucu Durumu</p>
+                  <p class="text-muted p-0 m-0">58/100</p>
+                </div>
+              </div>
+              <div class="row p-0 pb-2">
+                <div class="col-md-4">
+                    <div class="radial_progress" id="radialprogress" style="height: 75px; width: 75px ;
+                        background: conic-gradient(rgb(66, 164, 243) 0deg, rgb(82, 96, 213) 208.8deg, rgb(235, 236, 240) 213.8deg, rgb(235, 236, 240) 360deg);">
+                    <div class="radial_inner" id="radialinner">58%</div>
+                    </div>
+                </div>
+                <div class="col-md-8 p-0">
+                  <p class="text-muted p-0 m-0">Sunucu Durumu</p>
+                  <p class="text-muted p-0 m-0">58/100</p>
+                </div>
+              </div>
+              <div class="row justify-content-center align-items-center border-top  pt-2">
+                <span class="d-flex justify-content-center align-items-center"><span class="logo sliderDot greenSheme"></span>Server active</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row m-0 p-3 bg-light border-top p-absolute">
+      Berkay Aktaş Tarafından Yapılmış bir proje baz alınarak tekrardan
+      oluşturulmuştur &copy; 2022
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
